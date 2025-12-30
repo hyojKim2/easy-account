@@ -1,7 +1,7 @@
 spring:
   application:
     name: easy-account
-  autoconfigure: ## 나중 삭제하기!
+  autoconfigure: ## 나중 삭제하기! ㅎㅎㅎㅎ
     exclude:
       - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
       - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
