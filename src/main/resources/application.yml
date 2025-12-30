@@ -1,16 +1,20 @@
 spring:
   application:
     name: easy-account
+  autoconfigure: ## 나중 삭제하기!
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
   servlet:
     multipart:
       max-file-size: 10MB
       max-request-size: 10MB
 #  datasource:
 #    driver-class-name: org.postgresql.Driver
-  jpa:
-    hibernate:
-      ddl-auto: validate
-    open-in-view: false
+#  jpa:
+#    hibernate:
+#      ddl-auto: validate
+#    open-in-view: false
 
 #  profiles:
 #    active:
